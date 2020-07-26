@@ -5,7 +5,7 @@ import argparse
 import logging
 import sys
 import os
-import dicom_wsi
+from dicom_wsi.dicom_wsi import create_dicom
 from mods import parse_wsi
 
 from yaml import load, BaseLoader
@@ -83,7 +83,7 @@ def main():
     cfg['General']['OutFilePrefix'] = os.path.join(cfg['General']['OutDir'], cfg['General']['OutFilePrefix'])
     logging.debug(f'Running with parameters: {cfg}')
 
-    dicom_wsi.create_dicom(cfg, pools=args.pools)
+    create_dicom(cfg, pools=args.pools)
     return 0
 
 

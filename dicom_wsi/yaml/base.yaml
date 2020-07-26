@@ -1,5 +1,6 @@
 General:
-    WSIFile: '../tests/CMU-1-JP2K-33005.svs'
+#    WSIFile: '../tests/CMU-1-JP2K-33005.svs'
+    WSIFile: '/research/bsi/projects/PI/tertiary/Hart_Steven_m087494/s211408.DigitalPathology/Quincy/Data/dicom_test_data/OS-1.bif'
     OutDir: .
     OutFilePrefix: 'output'
     NumberOfLevels: 7
